@@ -180,7 +180,7 @@ func( time , f {function} )
  ```
 Solution 1: (with default values)  
 ```
-  function func(wait = 4000, f = function () {
+  function func(wait = 2000, f = function () {
       console.log("finished timeout");
   }) {
       setTimeout(f, wait);
@@ -193,7 +193,7 @@ func(10, myCallback);
 
 Solution 2: (with default objects)  
 ```
-  function func({wait = 4000, f = function () {
+  function func({wait = 2000, f = function () {
       console.log("finished timeout");
   }} = {}) {
       setTimeout(f, wait);
