@@ -25,7 +25,7 @@ Given these two functions, what would be logged on the console after running:
   console.log(getName2().name);
 ```
 
-In JavaScript semi-colons are optional. When the JavaScript's engine reads one character at a time, he know what to expect to. When it reads `return`, it knows that either it accepts a returned value, or returning nothing - which leads to an automatically semi-colon insertion.  
+In JavaScript semi-colons are optional. When the JavaScript's engine reads one character at a time, it knows what to expect to. When it reads `return`, it knows that either it accepts a returned value, or returning nothing - which leads to an automatically semi-colon insertion.  
 At function `getName1()`, after the return key-word we wrote a starting JSON with a `{`.  
 At function `getName2()` there is an end-line after the `return`, so JavaScript engine inserts automatically a semi-colon. 
 
