@@ -1,6 +1,11 @@
+Topics:  
+1. [Warm-Up](#warm-up)  
+2. [Introduction](#introduction)  
+3. [Default Arguments ES5:](#default-arguments-es5)  
+4. [Default Arguments ES6:](#default-arguments-es6)  
 
-
-#### We’re starting with a little warm-up:  
+#### Warm-Up  
+We’re starting with a little warm-up:
 ```  
   function getName1() {  
       return {
@@ -27,9 +32,15 @@ Given these two functions, what would be logged on the console after running:
 
 In JavaScript semi-colons are optional. When the JavaScript's engine reads one character at a time, it knows what to expect to. When it reads `return`, it knows that either it accepts a returned value, or returning nothing - which leads to an automatically semi-colon insertion.  
 At function `getName1()`, after the return key-word we wrote a starting JSON with a `{`.  
-At function `getName2()` there is an end-line after the `return`, so JavaScript engine inserts automatically a semi-colon. 
+At function `getName2()` there is an end-line after the `return`, so JavaScript engine inserts automatically a semi-colon.
 
-### Default Arguments ES5:
+## Introduction  
+As in many other languages, JavaScript has its own way to declare default values for the arguments which passed to a function.  
+This may help us for some cases:  
+* Avoiding situations which we don't know if a value would be passed to an argument, and the value would be undefined.
+* Making our code much more readable.
+
+## Default Arguments ES5:
 A very common way to get default arguments in ES5, is working with JavaScript coercion:
 ```  
   function ES5defaultParams(i, j) {
@@ -75,7 +86,7 @@ With `_.defaults()` we can set for an object default key-value pair values:
 * Disadvantage: Works for objects only.  
 
 
-### Default Arguments ES6:
+## Default Arguments ES6:
 #### Default Variables:
 In ES6 we have a very readable syntax which allows us declaring default values for function’s arguments:
 ```  
