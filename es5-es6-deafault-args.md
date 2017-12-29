@@ -178,11 +178,28 @@ Write a function which invokes setTimeout:
  */
 func( time , f {function} )
  ```
-Solution:  
+Solution 1: (with default values)  
 ```
-  function func({wait = 2000, f = function () {
+  function func(wait = 4000, f = function () {
+      console.log("finished timeout");
+  }) {
+      setTimeout(f, wait);
+  }
+```
+Invoking:  
+```
+func(10, myCallback);
+```
+
+Solution 2: (with default objects)  
+```
+  function func({wait = 4000, f = function () {
       console.log("finished timeout");
   }} = {}) {
       setTimeout(f, wait);
   }
+```
+Invoking:  
+```
+  func({wait: 10, f: myCallback});
 ```
