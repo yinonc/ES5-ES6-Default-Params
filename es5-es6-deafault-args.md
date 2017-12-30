@@ -108,6 +108,7 @@ Very simple ha? Lets get things a little more complicated! :)
 #### Default Objects:
 In order to understand how default arguments as objects works on ES6, we should understand what is `Destructuring Assignment`.  
 __Destructuring Assignment__ - is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.  
+Notice that it sais -distinct- which is a very meaningful word here. It actually refers to the excact key in the object.  
 
 Example 1:
 ```  
@@ -115,7 +116,7 @@ Example 1:
   console.log(a); // 10
   console.log(c); // 20
 ```
-As you can see, the name of the variable has to be exactly the same as the given object.
+As you can see, the name of the variable has to be exactly the same as key in the given object.
 
 Example 2:  
 ```  
