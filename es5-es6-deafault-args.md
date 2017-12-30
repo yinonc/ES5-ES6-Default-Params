@@ -41,6 +41,7 @@ This may help us for some cases:
 * Making our code much more readable.
 
 ## Default Arguments ES5:
+In ES5, there isn't a real syntactic way to set default arguments, and there are some ways we can do that, and here I'll represent three of them:  
 A very common way to get default arguments in ES5, is working with JavaScript coercion:
 ```  
   function ES5defaultParams(i, j) {
