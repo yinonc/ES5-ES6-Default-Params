@@ -3,6 +3,7 @@ Topics:
 2. [Introduction](#introduction)  
 3. [Default Arguments ES5:](#default-arguments-es5)  
 4. [Default Arguments ES6:](#default-arguments-es6)  
+5. [Practice:](#practice)
 
 #### Warm-Up  
 We’re starting with a little warm-up:
@@ -171,7 +172,7 @@ Notice that arg1 and arg2 must be the same keys as myObject has! Hence, the orde
 Readable, isn’t it?
 Try it yourself!
 
-##### Practice:  
+### Practice:  
 Write a function which invokes setTimeout:
    ```  
  /*
