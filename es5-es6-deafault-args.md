@@ -181,14 +181,14 @@ Write a function which invokes setTimeout:
  */
 func( time , f {function} )
  ```  
- Do it with both default variables and default objects! :)  
+ Do it with both default values and default objects! :)  
  
  -------------------------------------------------------------------------------  
  
 Solution 1: (with default values)  
 ```
   function func(wait = 2000, f = function () {
-      console.log("finished timeout");
+      console.log(`waited ${time} ms`);
   }) {
       setTimeout(f, wait);
   }
@@ -201,7 +201,7 @@ func(10, myCallback);
 Solution 2: (with default objects)  
 ```
   function func({wait = 2000, f = function () {
-      console.log("finished timeout");
+      console.log(`waited ${time} ms`);
   }} = {}) {
       setTimeout(f, wait);
   }
