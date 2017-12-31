@@ -180,7 +180,11 @@ Write a function which invokes setTimeout:
  *  f - callback function or a function which logs by default 'waited {time} ms'
  */
 func( time , f {function} )
- ```
+ ```  
+ Do it with both default variables and default objects! :)  
+ 
+ -------------------------------------------------------------------------------  
+ 
 Solution 1: (with default values)  
 ```
   function func(wait = 2000, f = function () {
