@@ -98,9 +98,9 @@ In ES6 we have a very readable syntax which allows us declaring default values f
 ```
 
 ```  
-  console.log(multiply(5)); // 10
+  console.log(multiply(5));   // 10
   console.log(multiply(3,6)); // 18
-  console.log(multiply()); // NaN
+  console.log(multiply());    // NaN
 ```
 Why is the third a NaN? Because we haven’t passed or set any value \ default value.  
 
